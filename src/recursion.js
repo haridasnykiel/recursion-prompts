@@ -67,12 +67,12 @@ var isEven = function(n) {
 // sumBelow(10); // 45
 // sumBelow(7); // 21
 var sumBelow = function(n) {
-  var sum = 0 + (n - 1);
-  console.log(sum);
+  n = n - 1;
+  console.log(n);
   if(n > 0) {
-    return sumBelow(sum);
+    return sumBelow(n);
   } else {
-    return sum;
+    return n + n;
   }
 
 };
